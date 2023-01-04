@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #003318;
+  line-height: 1.5;
+}
+
+.toolbar {
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.3rem 0.75rem;
+  background-color: #00b354;
+  font-size: 1.25rem;
+  font-family: "Nunito Sans", sans-serif;
+}
+.toolbar .fa-brands {
+  font-size: 1.7rem;
+}
+
+.editorContainer {
+  max-width: 600px;
+  margin: 1.5rem auto;
+}
+.editorContainer .toolbar {
+  box-shadow: -9px 5px 8px 0px rgb(0, 0, 0);
+}
+.editorContainer textarea {
+  box-shadow: -9px 5px 8px 0px rgb(0, 0, 0);
+  min-width: 100%;
+  min-height: 250px;
+  box-sizing: border-box;
+  outline: none;
+  padding: 5px;
+  background-color: #80ffbc;
+  resize: vertical;
+  border-radius: 0 0 10px 10px;
+}
+
+.previewContainer {
+  box-shadow: -9px 5px 8px 0px rgb(0, 0, 0);
+  border-radius: 10px;
+  max-width: 1000px;
+  margin: 1.5rem auto;
+  background-color: #80ffbc;
+}
+
+.maximized {
+  min-height: 100vh;
+  margin: auto;
+}
+.maximized textarea {
+  min-height: 100vh;
+  resize: none;
+}
+
+.hide {
+  display: none;
+}
+
+#preview {
+  font-family: Roboto, sans-serif;
+  padding: 2rem;
+}
+#preview * {
+  margin: 0 0 20px 0;
+}
+#preview h1, #preview h2, #preview h3 {
+  text-decoration: underline;
+}
+#preview a {
+  color: #003318;
+  text-decoration: none;
+  font-weight: bold;
+}
+#preview code {
+  background-color: white;
+  padding: 2px;
+  font-size: 0.9rem;
+}
+#preview pre {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+#preview blockquote {
+  margin: 0 0 0 20px;
+  border-left: 2px solid black;
+  padding: 0 0 0 10px;
+}
+#preview img {
+  display: block;
+  max-width: 90%;
+  margin: 1.25rem auto;
+}/*# sourceMappingURL=styles.css.map */
