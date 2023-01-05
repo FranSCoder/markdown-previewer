@@ -106,9 +106,8 @@ const Preview = function(props) {
 
 const placeholder = `# This is a heading element.
 
-
-
 ## This is a sub-heading element.
+
 ### This is a sub-sub-heading element.
 
 This is a [link](https://www.freecodecamp.org)

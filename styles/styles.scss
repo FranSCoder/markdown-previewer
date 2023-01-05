@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
 
-$imagin: #003318;
+$imagin: #0a0300;
 $lighterImagin: lighten($imagin, 25%);
 $lightestImagin: lighten($imagin, 65%);
 
@@ -25,32 +25,38 @@ body {
 	background-color: $lighterImagin;
 	font-size: 1.25rem;
 	font-family: "Nunito Sans", sans-serif;
+
 	.fa-brands {
 		font-size: 1.7rem;
 	}
+
+	font-weight: bold;
 }
 
 .editorContainer {
-  max-width: 600px;
-  margin: 1.5rem auto;
+	max-width: 600px;
+	margin: 1.5rem auto;
+
 	.toolbar {
-		box-shadow: -9px 5px 8px 0px rgba(0, 0, 0, 1);
+		box-shadow: -10px 7px 10px 0px rgba(255, 255, 255, .1);
+		border-radius: 0 10px 0 0;
 	}
+
 	textarea {
-		box-shadow: -9px 5px 8px 0px rgba(0, 0, 0, 1);
+		box-shadow: -10px 7px 10px 0px rgba(255, 255, 255, .1);
 		min-width: 100%;
-		min-height: 250px; 
+		min-height: 250px;
 		box-sizing: border-box;
 		outline: none;
-		padding: 5px;
+		padding: 15px;
 		background-color: $lightestImagin;
 		resize: vertical;
-		border-radius: 0 0 10px 10px;
+		border-radius: 0 0 0 10px;
 	}
 }
 
 .previewContainer {
-	box-shadow: -9px 5px 8px 0px rgba(0, 0, 0, 1);
+	box-shadow: -10px 7px 10px 0px rgba(255, 255, 255, .1);
 	border-radius: 10px;
 	max-width: 1000px;
 	margin: 1.5rem auto;
@@ -58,12 +64,13 @@ body {
 }
 
 .maximized {
-  min-height: 100vh;
-  margin: auto;
-  textarea {
-    min-height: 100vh;
-    resize: none;
-  }
+	min-height: 100vh;
+	margin: auto;
+
+	textarea {
+		min-height: 100vh;
+		resize: none;
+	}
 }
 
 .hide {
@@ -75,33 +82,41 @@ body {
 #preview {
 	font-family: Roboto, sans-serif;
 	padding: 2rem;
+
 	* {
 		margin: 0 0 20px 0;
 	}
-	h1, h2, h3 {
+
+	h1,
+	h2,
+	h3 {
 		text-decoration: underline;
 	}
+
 	a {
 		color: $imagin;
 		text-decoration: none;
 		font-weight: bold;
 	}
+
 	code {
 		background-color: white;
 		padding: 2px;
 		font-size: .9rem;
 	}
+
 	pre {
 		background-color: white;
 		padding: 10px;
 		border-radius: 5px;
 	}
+
 	blockquote {
 		margin: 0 0 0 20px;
 		border-left: 2px solid black;
 		padding: 0 0 0 10px;
 	}
-	
+
 	img {
 		display: block;
 		max-width: 90%;
