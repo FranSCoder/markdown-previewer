@@ -2,16 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
 
-$imagin: #0a0300;
-$lighterImagin: lighten($imagin, 25%);
-$lightestImagin: lighten($imagin, 65%);
+$imagin: linear-gradient(
+	60deg,
+	#000000,
+	#1f1f1f
+);
+$header: linear-gradient(
+	270deg,
+	#040404,
+	#4e4e4e 3%,
+	#4e4e4e 97%,
+	#040404 100%
+);
+$boxColor: #b8b8b8;
 
 * {
 	margin: 0;
 }
 
 body {
-	background-color: $imagin;
+	background: $imagin;
 	line-height: 1.5;
 }
 
@@ -22,7 +32,7 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	padding: 0.3rem 0.75rem;
-	background-color: $lighterImagin;
+	background: $header;
 	font-size: 1.25rem;
 	font-family: "Nunito Sans", sans-serif;
 
@@ -38,29 +48,28 @@ body {
 	margin: 1.5rem auto;
 
 	.toolbar {
-		box-shadow: -10px 7px 10px 0px rgba(255, 255, 255, .1);
-		border-radius: 0 10px 0 0;
+		box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
 	}
 
 	textarea {
-		box-shadow: -10px 7px 10px 0px rgba(255, 255, 255, .1);
+		box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 		min-width: 100%;
 		min-height: 250px;
 		box-sizing: border-box;
 		outline: none;
 		padding: 15px;
-		background-color: $lightestImagin;
+		background-color: $boxColor;
 		resize: vertical;
 		border-radius: 0 0 0 10px;
 	}
 }
 
 .previewContainer {
-	box-shadow: -10px 7px 10px 0px rgba(255, 255, 255, .1);
+	box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 	border-radius: 10px;
 	max-width: 1000px;
 	margin: 1.5rem auto;
-	background-color: $lightestImagin;
+	background-color: $boxColor;
 }
 
 .maximized {
